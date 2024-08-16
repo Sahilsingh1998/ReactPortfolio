@@ -5,7 +5,7 @@ function Projects() {
   return (
     <>
       <div className="container projects my-3" id='projects'>
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
         <div className="row d-flex justify-content-center align-items-center">
           {projects.map((data) => (<>
 
