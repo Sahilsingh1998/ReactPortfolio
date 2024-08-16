@@ -1,6 +1,7 @@
 import './App.css';
 import Navbaar from './components/Navbaar';
 import Home from './components/Home';
+import About from './components/About';
 import Experience from './components/Experience'
 import Skills from "./components/Skills";
 import Projects from './components/Projects';
@@ -21,6 +22,7 @@ function App() {
       <Navbaar></Navbaar>
       <div className="container">
         <Home />
+        <About />
         <Experience />
         <Skills />
         <Projects />
