@@ -23,7 +23,7 @@ function Footer() {
                                     <i className="fas fa-phone" />
                                     <div className="cta-text">
                                         <h4>Call us</h4>
-                                        <span>7782864311</span>
+                                        <span>+91 7782864311</span>
                                     </div>
                                 </div>
                             </div>
