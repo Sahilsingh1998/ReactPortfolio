@@ -12,12 +12,28 @@
       "imageSrc": "skills/javascript.png"
     },
     {
-      "title": "React",
+      "title": "React Js",
       "imageSrc": "skills/react.png"
     },
     {
-      "title": "Node",
+      "title": "Jquery",
+      "imageSrc": "skills/jquery.png"
+    },
+    {
+      "title": "Tailwind Css",
+      "imageSrc": "skills/tailwind.png"
+    },
+    {
+      "title": "Boostrap",
+      "imageSrc": "skills/boostrap.png"
+    },
+    {
+      "title": "Node Js",
       "imageSrc": "skills/node.png"
+    },
+    {
+      "title": "Express Js",
+      "imageSrc": "skills/express.png"
     },
     {
       "title":"GitHub",
@@ -34,6 +50,10 @@
     {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "Canva",
+      "imageSrc": "skills/canva.png"
     },
     {
       "title": "Netlify",

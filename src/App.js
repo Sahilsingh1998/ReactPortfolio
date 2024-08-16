@@ -9,6 +9,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
 import GoTop from "./components/GoTop"
+import Footer from './components/Footer';
 
 function App() {
   useEffect(()=>{
@@ -24,8 +25,9 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <GoTop />
       </div>
+      <Footer/>
+      <GoTop />
     </>
   );
 }
