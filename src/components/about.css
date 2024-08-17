@@ -20,16 +20,7 @@
     padding: 0px 36px;
   }
 }
-@media (max-width: 767px) {
-  .container {
-    padding: 0px 30px;
-  }
-}
-@media (max-width: 479px) {
-  .container {
-    padding: 0px 30px 0px 20px;
-  }
-}
+
 
 .about-me {
   padding-bottom: 50px;

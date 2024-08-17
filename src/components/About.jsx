@@ -36,7 +36,7 @@ const About = () => {
               />
             </div>
             <div className="text">
-                <h2>I am Sahil and I am a Web Developer</h2>
+                <h2>I am Sahil Singh and I am a Web Developer</h2>
               An ambitious Front-end Developer and designer who takes great
               pride in the presentation and quality of work.
               <br />

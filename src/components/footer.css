@@ -170,3 +170,17 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
+  .footer-logo img {
+    max-width: 100%;
+} 
+
+.footer-widget-heading{
+  margin-top: 10px;
+}
+.single-cta{
+  padding-bottom: 10px;
+}
+
+}
