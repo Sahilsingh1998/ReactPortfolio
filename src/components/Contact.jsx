@@ -30,9 +30,9 @@ function Contact() {
                     <div class="col-md-2">
                       <div class="right_conatct_social_icon d-flex align-items-end">
                         <div class="socil_item_inner d-flex">
-                          <li><a href="/"><i class="fab fa-facebook-square"></i></a></li>
-                          <li><a href="/"><i class="fab fa-instagram"></i></a></li>
-                          <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href='https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg' target='blank'><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href='https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw==' target='blank'><i class="fab fa-instagram"></i></a></li>
+                          <li><a href='https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08' target='blank'><i class="fab fa-twitter"></i></a></li>
                         </div>
                       </div>
                     </div>
