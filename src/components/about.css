@@ -111,7 +111,7 @@
 }
 .about-me-flex-container .about-me-image .main-image img {
   transform-origin: center center;
-  transform: scale(2);
+  transform: scale(1.2);
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.2s ease-out;

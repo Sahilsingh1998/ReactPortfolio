@@ -1,5 +1,6 @@
 import React from "react";
 import './about.css';
+import logo from "../img/profile pic.jpg"
 
 const About = () => {
   return (
@@ -16,16 +17,10 @@ const About = () => {
           <div className="about-me-image">
             <div className="back-div" />
             <div className="black-image">
-              <img
-                src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/main/images/black.jpg"
-                alt="black"
-              />
+            <img src={logo} alt={"logo"}/> 
             </div>
             <div className="main-image">
-              <img
-                src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/main/images/smit.jpg"
-                alt="smit"
-              />
+            <img src={logo} alt={"logo"}/>
             </div>
           </div>
           <div className="about-me-content">
