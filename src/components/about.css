@@ -62,8 +62,11 @@
 }
 @media (max-width: 500px) {
   .about-me-flex-container {
-    margin-top: -10px;
+    margin-top: 25px;
   }
+}
+.mail-button2 {
+  left: 30% !important;
 }
 .about-me-flex-container .about-me-image {
   position: relative;
