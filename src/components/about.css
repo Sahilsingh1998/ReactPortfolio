@@ -64,14 +64,15 @@
   .about-me-flex-container {
     margin-top: 25px;
   }
+  .mail-button2 {
+    left: 30% !important;
+  }
+  .home .left {
+    height: 25vh;
+    padding: 15px;
+  }
 }
-.mail-button2 {
-  left: 30% !important;
-}
-.home .left {
-  height: 25vh;
-  padding: 15px;
-}
+
 .about-me-flex-container .about-me-image {
   position: relative;
   width: 400px;
