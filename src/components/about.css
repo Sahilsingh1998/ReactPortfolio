@@ -30,7 +30,7 @@
 }
 @media (max-width: 960px) {
   .about-me .about-me-container {
-    padding-bottom: 100px;
+    padding-bottom: 32px;
   }
 }
 .about-me .about-me-container .about-me-title {
@@ -45,11 +45,8 @@
 }
 
 .about-me-flex-container {
-  margin-top: 50px;
-  margin-left: 150px;
-  left: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 960px) {
   .about-me-flex-container {
@@ -131,8 +128,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
-  flex: 0 0 40%;
+  flex: 0 0 52%;
 }
 @media (max-width: 960px) {
   .about-me-flex-container .about-me-content {
@@ -187,8 +183,8 @@
 .mail-button2 {
   background-color: #001925;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -10%;
+  left:0;
   border: 10px solid #001925;
 }
 .mail-button2 img {

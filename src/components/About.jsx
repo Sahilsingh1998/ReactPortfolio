@@ -8,18 +8,18 @@ const About = () => {
         <section className="about-me" id="about-me">
           <div className="container">
             <div className="about-me-container">
-              <div className="about-me-title">
+              <div className="about-me-title mb-5">
                 ABOUT ME
               </div>
-              <div className="about-me-flex-container">
+              <div className="about-me-flex-container mt-5">
                 <div className="about-me-image">
                   <div className="back-div" />
                   <div className="black-image">
-                    {/* Image reference updated to be relative to public */}
+                    {}
                     <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" />
                   </div>
                   <div className="main-image">
-                    {/* Image reference updated to be relative to public */}
+                    {}
                     <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" />
                   </div>
                 </div>

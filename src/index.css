@@ -279,7 +279,6 @@ a {
 /*------------Start Media Query Section ---------- */
 
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
-
 .ex{
   display: unset !important;
 }

@@ -79,7 +79,7 @@ function Footer() {
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">
-                                        <h3>Useful Links</h3>
+                                        <h3>Quick Links</h3>
                                     </div>
                                     <ul>
                                         <li>
