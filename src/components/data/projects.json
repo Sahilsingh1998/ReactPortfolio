@@ -7,10 +7,10 @@
   },
   {
     "key": 2,
-    "title": "Delhi Technical Campus",
-    "imageSrc": "/assets/img/dtc.webp",
-    "description": "This is a project made with complete Wordpress.",
-    "source": "https://delhitechnicalcampus.ac.in/"
+    "title": "DhwaniAstro",
+    "imageSrc": "/assets/img/dhwaniastro.png",
+    "description": "This is a project made with complete HTML, CSS, JAVASCRIPT with PHP.",
+    "source": "https://dhwaniastro.com/"
   },
   {
     "key": 3,
@@ -21,10 +21,10 @@
   },
   {
     "key": 4,
-    "title": "DhwaniAstro",
-    "imageSrc": "/assets/img/dhwaniastro.png",
-    "description": "This is a project made with complete HTML, CSS, JAVASCRIPT with PHP.",
-    "source": "https://dhwaniastro.com/"
+    "title": "Delhi Technical Campus",
+    "imageSrc": "/assets/img/dtc.webp",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://delhitechnicalcampus.ac.in/"
   },
   {
     "key": 5,

@@ -32,10 +32,8 @@ const About = () => {
                   </div>
                   <div className="text">
                     <h2>I am Sahil Singh and I am a Web Developer</h2>
-                    An ambitious Front-end Developer and designer who takes great
-                    pride in the presentation and quality of work.
-                    <br />
-                    <br />
+                    <br/>
+                    Enthusiastic and detail-oriented web developer with creating and optimizing web applications. Adept at coding, debugging, and maintaining responsive and user-friendly websites. Passionate about staying updated with the latest web development trends and technologies. Strong problem-solving skills and a commitment to delivering high-quality work.
                     I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.
                   </div>
                 </div>
