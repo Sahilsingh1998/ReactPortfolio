@@ -62,5 +62,5 @@
   background: #ffff00;
   transform-origin: 0 50%;
   animation: grow-progress auto linear;
-  animation-timeline: scroll();
+  animation-timeline: scroll() !important;
 }
