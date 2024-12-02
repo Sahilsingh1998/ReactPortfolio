@@ -17,19 +17,19 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
+    const scriptUrl =
+      "https://script.google.com/macros/s/AKfycbxjiU_Bj0Ax-OBhqO8xy-ujwmsCRQ1L3NJoK1d4Nm0GF3hl4gBh5t_5CWYYNJrXE3ZFnw/exec";
+  
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxjiU_Bj0Ax-OBhqO8xy-ujwmsCRQ1L3NJoK1d4Nm0GF3hl4gBh5t_5CWYYNJrXE3ZFnw/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
+      const response = await fetch(scriptUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
       const result = await response.json();
       if (result.status === "success") {
         setStatusMessage("Form submitted successfully!");
@@ -39,9 +39,11 @@ const ContactForm = () => {
       }
     } catch (error) {
       console.error("Error:", error);
-      setStatusMessage("Error submitting form. Please try again.");
+      setStatusMessage("An unexpected error occurred. Please try again later.");
     }
   };
+  
+
 
   return (
     <div className="container contact" id="contact">
