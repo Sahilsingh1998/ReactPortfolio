@@ -18,7 +18,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyVRpDABbOPhxqkS_6rbV4XIVoxs-0nGnTlCp6ambFFI3iX9YpX0Lx9062kOYyorY4cZA/exec",
+        "https://script.google.com/macros/s/AKfycbxPI5sTZlSSLvv1t3xbtSeZyph94DnKquWH95iHCaKMj_CEhatGPW80oQkEsgaN18iN5A/exec",
         {
           method: "POST",
           headers: {
