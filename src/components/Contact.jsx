@@ -8,6 +8,8 @@ const ContactForm = () => {
     Message: "",
   });
 
+  const [statusMessage, setStatusMessage] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -18,7 +20,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxPI5sTZlSSLvv1t3xbtSeZyph94DnKquWH95iHCaKMj_CEhatGPW80oQkEsgaN18iN5A/exec",
+        "https://script.google.com/macros/s/AKfycbxjiU_Bj0Ax-OBhqO8xy-ujwmsCRQ1L3NJoK1d4Nm0GF3hl4gBh5t_5CWYYNJrXE3ZFnw/exec",
         {
           method: "POST",
           headers: {
@@ -30,14 +32,14 @@ const ContactForm = () => {
 
       const result = await response.json();
       if (result.status === "success") {
-        alert("Form submitted successfully!");
+        setStatusMessage("Form submitted successfully!");
         setFormData({ Name: "", Email: "", phone: "", Message: "" });
       } else {
-        alert("Error submitting form. Please try again.");
+        setStatusMessage("Error submitting form. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Error submitting form. Please try again.");
+      setStatusMessage("Error submitting form. Please try again.");
     }
   };
 
@@ -98,6 +100,9 @@ const ContactForm = () => {
                             Send
                           </button>
                         </form>
+                        {statusMessage && (
+                          <p className="status-message">{statusMessage}</p>
+                        )}
                       </div>
                     </div>
                   </div>
