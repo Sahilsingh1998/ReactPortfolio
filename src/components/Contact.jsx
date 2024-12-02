@@ -31,12 +31,20 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
-      if (result.status === "success") {
-        setStatusMessage("Form submitted successfully!");
-        setFormData({ Name: "", Email: "", phone: "", Message: "" });
-      } else {
-        setStatusMessage("Error submitting form. Please try again.");
+      // Try to parse the response as JSON or handle as text
+      const result = await response.text(); // Change to text first
+
+      // Check if the response is in JSON format
+      try {
+        const jsonResult = JSON.parse(result);
+        if (jsonResult.status === "success") {
+          setStatusMessage("Form submitted successfully!");
+          setFormData({ Name: "", Email: "", phone: "", Message: "" });
+        } else {
+          setStatusMessage("Error submitting form. Please try again.");
+        }
+      } catch (jsonError) {
+        setStatusMessage("Unexpected response format: " + result);
       }
     } catch (error) {
       console.error("Error:", error);
