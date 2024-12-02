@@ -1,107 +1,69 @@
-import React, { useState } from "react";
+import React from 'react'
 
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    Name: "",
-    Email: "",
-    phone: "",
-    Message: "",
-  });
-
-  const [statusMessage, setStatusMessage] = useState("");
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-    const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbxjiU_Bj0Ax-OBhqO8xy-ujwmsCRQ1L3NJoK1d4Nm0GF3hl4gBh5t_5CWYYNJrXE3ZFnw/exec";
-
-    try {
-      const response = await fetch(proxyUrl + scriptUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      // Try to parse the response as JSON or handle as text
-      const result = await response.text(); // Change to text first
-
-      // Check if the response is in JSON format
-      try {
-        const jsonResult = JSON.parse(result);
-        if (jsonResult.status === "success") {
-          setStatusMessage("Form submitted successfully!");
-          setFormData({ Name: "", Email: "", phone: "", Message: "" });
-        } else {
-          setStatusMessage("Error submitting form. Please try again.");
-        }
-      } catch (jsonError) {
-        setStatusMessage("Unexpected response format: " + result);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setStatusMessage("An unexpected error occurred. Please try again later.");
-    }
-  };
-
+function Contact() {
   return (
-    <div className="container contact" id="contact">
-      <h1>CONTACT US</h1>
-      <section className="contact_us mt-5">
-        <div className="container">
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="Name"
-              className="form-control form-group py-2"
-              placeholder="Name"
-              value={formData.Name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="Email"
-              className="form-control form-group py-2"
-              placeholder="Email"
-              value={formData.Email}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              className="form-control form-group py-2"
-              placeholder="Phone no"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              className="form-control form-group py-2"
-              name="Message"
-              placeholder="Message"
-              value={formData.Message}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit" className="contact_form_submit">
-              Send
-            </button>
-            {statusMessage && <p className="status-message">{statusMessage}</p>}
-          </form>
-        </div>
-      </section>
-    </div>
-  );
-};
+    <>
+      <div className="container contact" id='contact'>
+        <h1>CONTACT US</h1>
+        <section class="contact_us mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <div class="contact_inner">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <div class="contact_form_inner">
+                        <div class="contact_field">
+                          <h3>Contatc Us</h3>
+                          <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                          <form action="https://formspree.io/f/mbjnazvj"
+                            method="POST">
+                            <input type="text" name='Name' class="form-control form-group py-2" placeholder="Name" required />
+                            <input type="text" name='Email' class="form-control form-group py-2" placeholder="Email" required />
+                            <input type="text" name='phone' class="form-control form-group py-2" placeholder="Phone no" required />
+                            <textarea class="form-control form-group py-2" placeholder="Message" required></textarea>
+                            <button class="contact_form_submit">Send</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="right_conatct_social_icon d-flex align-items-end">
+                        <div class="socil_item_inner d-flex">
+                          <li><a href='https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg' target='blank'><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href='https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw==' target='blank'><i class="fab fa-instagram"></i></a></li>
+                          <li><a href='https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08' target='blank'><i class="fab fa-twitter"></i></a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact_info_sec">
+                    <h4>Contact Info</h4>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-headset"></i>
+                      <span>+91 7782864311</span>
+                    </div>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-envelope-open-text"></i>
+                      <span>singhsahil.8340@gmail.com</span>
+                    </div>
 
-export default ContactForm;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="container-fluid mt-5">
+          <div class="responsive-map">
+            <iframe title="Address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.258830412314!2d87.24579554199615!3d25.45065026019435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0182634c26067%3A0x26b88ea67dd3e779!2sKursela%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710963292649!5m2!1sen!2sin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </>
+  )
+}
+
+export default Contact
