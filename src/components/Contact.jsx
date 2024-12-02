@@ -17,19 +17,20 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     const scriptUrl =
       "https://script.google.com/macros/s/AKfycbxjiU_Bj0Ax-OBhqO8xy-ujwmsCRQ1L3NJoK1d4Nm0GF3hl4gBh5t_5CWYYNJrXE3ZFnw/exec";
-  
+
     try {
-      const response = await fetch(scriptUrl, {
+      const response = await fetch(proxyUrl + scriptUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-  
+
       const result = await response.json();
       if (result.status === "success") {
         setStatusMessage("Form submitted successfully!");
@@ -42,132 +43,55 @@ const ContactForm = () => {
       setStatusMessage("An unexpected error occurred. Please try again later.");
     }
   };
-  
-
 
   return (
     <div className="container contact" id="contact">
       <h1>CONTACT US</h1>
       <section className="contact_us mt-5">
         <div className="container">
-          <div className="row">
-            <div className="col-md-10 offset-md-1">
-              <div className="contact_inner">
-                <div className="row">
-                  <div className="col-md-10">
-                    <div className="contact_form_inner">
-                      <div className="contact_field">
-                        <h3>Contact Us</h3>
-                        <p>
-                          Feel free to contact us anytime. We will get back to
-                          you as soon as we can!
-                        </p>
-                        <form onSubmit={handleSubmit}>
-                          <input
-                            type="text"
-                            name="Name"
-                            className="form-control form-group py-2"
-                            placeholder="Name"
-                            value={formData.Name}
-                            onChange={handleChange}
-                            required
-                          />
-                          <input
-                            type="email"
-                            name="Email"
-                            className="form-control form-group py-2"
-                            placeholder="Email"
-                            value={formData.Email}
-                            onChange={handleChange}
-                            required
-                          />
-                          <input
-                            type="tel"
-                            name="phone"
-                            className="form-control form-group py-2"
-                            placeholder="Phone no"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            required
-                          />
-                          <textarea
-                            className="form-control form-group py-2"
-                            name="Message"
-                            placeholder="Message"
-                            value={formData.Message}
-                            onChange={handleChange}
-                            required
-                          />
-                          <button type="submit" className="contact_form_submit">
-                            Send
-                          </button>
-                        </form>
-                        {statusMessage && (
-                          <p className="status-message">{statusMessage}</p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2">
-                    <div className="right_conatct_social_icon d-flex align-items-end">
-                      <div className="socil_item_inner d-flex">
-                        <li>
-                          <a
-                            href="https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="fab fa-facebook-square"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw=="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                        </li>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="contact_info_sec">
-                  <h4>Contact Info</h4>
-                  <div className="d-flex info_single align-items-center">
-                    <i className="fas fa-headset"></i>
-                    <span>+91 7782864311</span>
-                  </div>
-                  <div className="d-flex info_single align-items-center">
-                    <i className="fas fa-envelope-open-text"></i>
-                    <span>singhsahil.8340@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="Name"
+              className="form-control form-group py-2"
+              placeholder="Name"
+              value={formData.Name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              className="form-control form-group py-2"
+              placeholder="Email"
+              value={formData.Email}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              className="form-control form-group py-2"
+              placeholder="Phone no"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+            <textarea
+              className="form-control form-group py-2"
+              name="Message"
+              placeholder="Message"
+              value={formData.Message}
+              onChange={handleChange}
+              required
+            />
+            <button type="submit" className="contact_form_submit">
+              Send
+            </button>
+            {statusMessage && <p className="status-message">{statusMessage}</p>}
+          </form>
         </div>
       </section>
-
-      <div className="container-fluid mt-5">
-        <div className="responsive-map">
-          <iframe
-            title="Address"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.258830412314!2d87.24579554199615!3d25.45065026019435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0182634c26067%3A0x26b88ea67dd3e779!2sKursela%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710963292649!5m2!1sen!2sin"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
     </div>
   );
 };
