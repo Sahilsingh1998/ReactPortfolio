@@ -140,21 +140,24 @@ function Footer() {
                             </div>
                             <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                                 <div className="footer-menu">
-                                    <ul>
+                                <ul>
                                         <li>
                                             <a href="#home">Home</a>
                                         </li>
                                         <li>
-                                            <a href="/">Terms</a>
+                                            <a href="#experience">Experience</a>
                                         </li>
                                         <li>
-                                            <a href="/">Privacy</a>
+                                            <a href="#skills">Skills</a>
                                         </li>
                                         <li>
-                                            <a href="/">Policy</a>
+                                            <a href="#projects">Projects</a>
                                         </li>
                                         <li>
                                             <a href="#contact">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://dapper-axolotl-7a9863.netlify.app/" target="_blank" rel='noreferrer'>Portfolio</a>
                                         </li>
                                     </ul>
                                 </div>
