@@ -1,20 +1,22 @@
-import React from 'react'
+import React from 'react';
+import headerData from './data/header.json';
 
 function Navbaar() {
     return (
-        <div>
-            <div className="container nav_bar" data-aos="fade-down" data-aos-duration="1000" >
-                <div className="left nav_items">Portfolio</div>
-                <div className="right">
-                    <a href="#home" className="nav_items">Home</a>
-                    <a href="#experience" className="nav_items">Experience</a>
-                    <a href="#skills" className="nav_items">Skills</a>
-                    <a href="#projects" className="nav_items">Projects</a>
-                    <a href="#contact" className="nav_items">Contact</a>
-                </div>
+        <div className="container nav_bar" data-aos="fade-down" data-aos-duration="1000">
+            {}
+            <div className="left nav_items">{headerData.brand}</div>
+
+            {}
+            <div className="right">
+                {headerData.links.map((link, index) => (
+                    <a key={index} href={link.href} className="nav_items">
+                        {link.label}
+                    </a>
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbaar;
