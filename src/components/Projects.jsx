@@ -1,10 +1,9 @@
-import React from 'react';
 import projects from './data/projects.json';
 
 function Projects() {
   return (
     <div className="container projects my-3" id="projects">
-      <h1 className="my-4">PROJECTSs</h1>
+      <h1 className="my-4">PROJECTS </h1>
       <div className="row">
         {projects.map((data) => (
           <div key={data.key} className="col-md-4 col-lg-4 col-12 my-3">

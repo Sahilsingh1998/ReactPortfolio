@@ -35,20 +35,27 @@
   },
   {
     "key": 6,
+    "title": "Dialmaz",
+    "imageSrc": "/assets/img/dialmaz.png",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://dialmaz.com/"
+  },
+  {
+    "key": 7,
     "title": "Valuez School",
     "imageSrc": "/assets/img/valuez.webp",
     "description": "This is a project made with HTML, CSS, & JAVASCRIPT.",
     "source": "https://valuezschool.com/"
   },
   {
-    "key": 7,
+    "key": 8,
     "title": "Swatcat",
     "imageSrc": "/assets/img/swatcpr.png",
     "description": "This is a project made with complete Wordpress.",
     "source": "https://www.swatcatpr.com/"
   },
   {
-    "key": 8,
+    "key": 9,
     "title": "Enlightenment Education",
     "imageSrc": "/assets/img/dme.jpg",
     "description": "This is a project made with complete HTML, CSS, & JAVASCRIPT.",
@@ -56,28 +63,28 @@
   },
 
   {
-    "key": 9,
+    "key": 10,
     "title": "BHD Fasteners",
-    "imageSrc": "/assets/img/bhd.png",
+    "imageSrc": "/assets/img/bhd.jpg",
     "description": "This is a project made with complete Wordpress.",
     "source": "https://bhdfasteners.com/"
   },
   {
-    "key": 10,
+    "key": 11,
     "title": "Om Group Of Colleges",
     "imageSrc": "/assets/img/omgroup.jpeg",
     "description": "This is a project made with complete Wordpress.",
     "source": "https://omcollege.org/"
   },
   {
-    "key": 11,
+    "key": 12,
     "title": "FORE Academy",
     "imageSrc": "/assets/img/fore.avif",
     "description": "This is a project made with complete Wordpress.",
     "source": "https://foreacademy.org/"
   },
   {
-    "key": 12,
+    "key": 13,
     "title": "FIDTR Academy",
     "imageSrc": "/assets/img/fidtr.jpeg",
     "description": "This is a project made with complete Wordpress.",
