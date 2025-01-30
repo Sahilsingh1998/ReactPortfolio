@@ -1,0 +1,66 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "title": "React Js",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Jquery",
+    "imageSrc": "skills/jquery.png"
+  },
+  {
+    "title": "Tailwind Css",
+    "imageSrc": "skills/tailwind.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/boostrap.png"
+  },
+  {
+    "title": "Node Js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Express Js",
+    "imageSrc": "skills/express.png"
+  },
+  {
+    "title": "GitHub",
+    "imageSrc": "skills/github.png"
+  },
+  {
+    "title": "WordPress",
+    "imageSrc": "skills/wordpress.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "MySql",
+    "imageSrc": "skills/mysql.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "Canva",
+    "imageSrc": "skills/canva.png"
+  },
+  {
+    "title": "Netlify",
+    "imageSrc": "skills/netlify.png"
+  }
+]

@@ -1,0 +1,64 @@
+{
+    "cta": [{
+            "iconClass": "fas fa-map-marker-alt",
+            "title": "Find Me",
+            "text": "New Delhi, India"
+        },
+        {
+            "iconClass": "fas fa-phone",
+            "title": "Call Me",
+            "text": "+91 7782864311"
+        },
+        {
+            "iconClass": "far fa-envelope-open",
+            "title": "Mail Me",
+            "text": "singhsahil.8340@gmail.com"
+        }
+    ],
+    "quickLinks": [{
+            "label": "Home",
+            "href": "#home"
+        },
+        {
+            "label": "Experience",
+            "href": "#experience"
+        },
+        {
+            "label": "Skills",
+            "href": "#skills"
+        },
+        {
+            "label": "Projects",
+            "href": "#projects"
+        },
+        {
+            "label": "Contact",
+            "href": "#contact"
+        },
+        {
+            "label": "Portfolio",
+            "href": "https://dapper-axolotl-7a9863.netlify.app/"
+        }
+    ],
+    "socialLinks": [{
+            "iconClass": "fab fa-facebook-f facebook-bg",
+            "href": "https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg"
+        },
+        {
+            "iconClass": "fab fa-twitter twitter-bg",
+            "href": "https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08"
+        },
+        {
+            "iconClass": "fab fa-instagram instagram-bg",
+            "href": "https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw=="
+        },
+        {
+            "iconClass": "fab fa-linkedin linkedin-bg",
+            "href": "https://www.linkedin.com/in/sahil-singh-69833425b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        },
+        {
+            "iconClass": "fab fa-github github-bg",
+            "href": "https://github.com/Sahilsingh1998"
+        }
+    ]
+}

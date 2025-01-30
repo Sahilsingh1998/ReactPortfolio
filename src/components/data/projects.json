@@ -1,0 +1,86 @@
+[{
+    "key": 1,
+    "title": "Portfolio",
+    "imageSrc": "/assets/img/portfolio.svg",
+    "description": "This is a Personal Portfolio made with complete React Js.",
+    "source": "https://dapper-axolotl-7a9863.netlify.app/"
+  },
+  {
+    "key": 2,
+    "title": "DhwaniAstro",
+    "imageSrc": "/assets/img/dhwaniastro.png",
+    "description": "This is a project made with complete HTML, CSS, JAVASCRIPT with PHP.",
+    "source": "https://dhwaniastro.com/"
+  },
+  {
+    "key": 3,
+    "title": "Delhi Metropolitan Education (DME)",
+    "imageSrc": "/assets/img/dme.png",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://dme.ac.in/"
+  },
+  {
+    "key": 4,
+    "title": "Delhi Technical Campus",
+    "imageSrc": "/assets/img/dtc.webp",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://delhitechnicalcampus.ac.in/"
+  },
+  {
+    "key": 5,
+    "title": "DWPS Noida Extension",
+    "imageSrc": "/assets/img/dwps.jpg",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://www.dwpsnoidaex.com/"
+  },
+  {
+    "key": 6,
+    "title": "Valuez School",
+    "imageSrc": "/assets/img/valuez.webp",
+    "description": "This is a project made with HTML, CSS, & JAVASCRIPT.",
+    "source": "https://valuezschool.com/"
+  },
+  {
+    "key": 7,
+    "title": "Swatcat",
+    "imageSrc": "/assets/img/swatcpr.png",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://www.swatcatpr.com/"
+  },
+  {
+    "key": 8,
+    "title": "Enlightenment Education",
+    "imageSrc": "/assets/img/dme.jpg",
+    "description": "This is a project made with complete HTML, CSS, & JAVASCRIPT.",
+    "source": "https://enlightenmenteducation.org/"
+  },
+
+  {
+    "key": 9,
+    "title": "BHD Fasteners",
+    "imageSrc": "/assets/img/bhd.png",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://bhdfasteners.com/"
+  },
+  {
+    "key": 10,
+    "title": "Om Group Of Colleges",
+    "imageSrc": "/assets/img/omgroup.jpeg",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://omcollege.org/"
+  },
+  {
+    "key": 11,
+    "title": "FORE Academy",
+    "imageSrc": "/assets/img/fore.avif",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://foreacademy.org/"
+  },
+  {
+    "key": 12,
+    "title": "FIDTR Academy",
+    "imageSrc": "/assets/img/fidtr.jpeg",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://fidtr.com/"
+  }
+]
