@@ -8,9 +8,7 @@ const About = () => {
         <section className="about-me" id="about-me">
           <div className="container">
             <div className="about-me-container">
-              <div className="about-me-title mb-5">
-                ABOUT ME
-              </div>
+              <h1 class="my-4">ABOUT ME</h1>
               <div className="about-me-flex-container mt-5">
                 <div className="about-me-image">
                   <div className="back-div" />

@@ -89,5 +89,19 @@
     "imageSrc": "/assets/img/fidtr.jpeg",
     "description": "This is a project made with complete Wordpress.",
     "source": "https://fidtr.com/"
+  },
+  {
+    "key": 14,
+    "title": "WinInfra",
+    "imageSrc": "/assets/img/wininfra.jpeg",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://wininfra.in/"
+  },
+  {
+    "key": 15,
+    "title": "Nikita Industries",
+    "imageSrc": "/assets/img/Nikita.webp",
+    "description": "This is a project made with complete Wordpress.",
+    "source": "https://nikitaindustries.com/"
   }
 ]

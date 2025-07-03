@@ -62,5 +62,14 @@
   {
     "title": "Netlify",
     "imageSrc": "skills/netlify.png"
+  },
+  {
+    "title": "Sanity",
+    "imageSrc": "skills/sanity.png"
+  }
+  ,
+  {
+    "title": "Vercel",
+    "imageSrc": "skills/vercel.png"
   }
 ]

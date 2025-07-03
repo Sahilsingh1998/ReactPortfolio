@@ -9,7 +9,7 @@ const Skills = () => {
         {skills.map((data, index) => (
           <div
             key={index}
-            className="col-md-4 mb-4 d-flex justify-content-center" // 3 columns with spacing
+            className="col-md-2 mb-4 d-flex justify-content-center" // 3 columns with spacing
             data-aos="flip-left"
             data-aos-duration="1000"
           >

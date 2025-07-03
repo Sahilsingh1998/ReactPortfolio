@@ -6,7 +6,7 @@ function Projects() {
       <h1 className="my-4">PROJECTS </h1>
       <div className="row">
         {projects.map((data) => (
-          <div key={data.key} className="col-md-4 col-lg-4 col-12 my-3">
+          <div key={data.key} className="col-md-3 col-lg-3 col-12 my-3">
             <div
               className="card text-light bg-dark d-flex flex-column h-100"
               data-aos="fade-up-right"
