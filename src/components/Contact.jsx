@@ -14,7 +14,7 @@ function Contact() {
                     <div class="col-md-10">
                       <div class="contact_form_inner">
                         <div class="contact_field">
-                          <h3>Contact Me</h3>
+                          <h2>Contact Me</h2>
                           <p>Feel Free to contact me any time. I will get back to you as soon as I can!.</p>
                           <form action="https://formspree.io/f/mbjnazvj"
                             method="POST">
@@ -50,7 +50,7 @@ function Contact() {
                     </div>
                   </div>
                   <div class="contact_info_sec">
-                    <h4>Contact Info</h4>
+                    <h3>Contact Info</h3>
                     <div class="d-flex info_single align-items-center">
                       <i class="fas fa-headset"></i>
                       <span>+91 7782864311</span>

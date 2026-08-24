@@ -24,16 +24,16 @@ const Experience = () => {
               </div>
               <div className="right">
                 <h2>{data.role}</h2>
-                <h4>
+                <h3>
                   <span style={{ color: "yellowgreen" }}>
                     {data.startDate} - {data.endDate}
                   </span>{" "}
                   <span style={{ color: "yellow" }}>{data.location}</span>
-                </h4>
+                </h3>
                 {data.experiences.map((exp, index) => (
-                  <h5 key={index} style={{ color: "yellow" }}>
+                  <p key={index} style={{ color: "yellow", margin: 0 }}>
                     {exp}
-                  </h5>
+                  </p>
                 ))}
               </div>
             </div>

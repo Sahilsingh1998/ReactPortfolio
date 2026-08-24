@@ -18,7 +18,7 @@ function Projects() {
                 alt={data.title}
               />
               <div className="card-body text-center">
-                <h5 className="card-title">{data.title}</h5>
+                <h2 className="card-title">{data.title}</h2>
                 <p className="card-text">{data.description}</p>
                 <a
                   href={data.source}

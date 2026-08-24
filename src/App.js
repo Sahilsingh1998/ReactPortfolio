@@ -20,14 +20,14 @@ function App() {
   return (
     <>
       <Navbaar></Navbaar>
-      <div className="container">
+      <main className="container" id="main">
         <Home />
         <About />
         <Experience />
         <Skills />
         <Projects />
         <Contact />
-      </div>
+      </main>
       <Footer/>
       <GoTop />
     </>

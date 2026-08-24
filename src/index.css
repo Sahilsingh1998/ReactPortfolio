@@ -71,8 +71,9 @@ a {
 }
 
 .home .right .img img {
-  height: 350px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
   border-radius: 100%;
 }
 
@@ -310,6 +311,7 @@ a {
   .contact_info_sec {
     position: absolute;
     background-color: #2d2d2d;
+    color: #ffffff;
     right: 1px;
     top: 20%;
     padding: 10px;
@@ -317,6 +319,7 @@ a {
   }
   .contact_info_sec h4{
    letter-spacing: 1px;
+   color: #ffffff;
   }
   
   .info_single{
@@ -328,6 +331,7 @@ a {
   .info_single span{
    font-size: 14px;
    letter-spacing: 1px;
+   color: #ffffff;
   }
   
   button.contact_form_submit {

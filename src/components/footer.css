@@ -25,8 +25,8 @@ ul {
   font-weight: 600;
   margin-bottom: 2px;
 }
-.cta-text span {
-  color: #757575;
+  .cta-text span {
+  color: #cfcfcf;
   font-size: 15px;
 }
 .footer-content {
@@ -50,7 +50,7 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #d1d1d1;
   line-height: 28px;
 }
 .footer-social-icon span {
@@ -120,7 +120,7 @@ ul {
   color: #ff5e14;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: #d0d0d0;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -154,10 +154,12 @@ ul {
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: #d0d0d0;
 }
 .copyright-text p a{
   color: #ff5e14;
+  text-decoration: underline;
+  text-decoration-color: #ff5e14;
 }
 .footer-menu li {
   display: inline-block;
@@ -168,7 +170,7 @@ ul {
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #d0d0d0;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
