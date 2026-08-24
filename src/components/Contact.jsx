@@ -29,11 +29,23 @@ function Contact() {
                     </div>
                     <div class="col-md-2">
                       <div class="right_conatct_social_icon d-flex align-items-end">
-                        <div class="socil_item_inner d-flex">
-                          <li><a href='https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg' target='blank'><i class="fab fa-facebook-square"></i></a></li>
-                          <li><a href='https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw==' target='blank'><i class="fab fa-instagram"></i></a></li>
-                          <li><a href='https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08' target='blank'><i class="fab fa-twitter"></i></a></li>
-                        </div>
+                        <ul class="socil_item_inner d-flex">
+                          <li>
+                            <a href='https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg' target='_blank' rel='noopener noreferrer' aria-label='Facebook'>
+                              <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw==' target='_blank' rel='noopener noreferrer' aria-label='Instagram'>
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08' target='_blank' rel='noopener noreferrer' aria-label='Twitter'>
+                              <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

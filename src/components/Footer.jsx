@@ -46,11 +46,33 @@ function Footer() {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow Me</span>
-                                    {footerData.socialLinks.map((link, index) => (
-                                        <a key={index} href={link.href} target="_blank" rel="noreferrer">
-                                            <i className={link.iconClass} />
-                                        </a>
-                                    ))}
+                                    {footerData.socialLinks.map((link, index) => {
+                                        const href = link.href || '';
+                                        const icon = (link.iconClass || '').toLowerCase();
+                                        const label = icon.includes('facebook') || href.includes('facebook')
+                                            ? 'Facebook'
+                                            : icon.includes('twitter') || href.includes('x.com') || href.includes('twitter')
+                                                ? 'Twitter'
+                                                : icon.includes('instagram') || href.includes('instagram')
+                                                    ? 'Instagram'
+                                                    : icon.includes('linkedin') || href.includes('linkedin')
+                                                        ? 'LinkedIn'
+                                                        : icon.includes('github') || href.includes('github')
+                                                            ? 'GitHub'
+                                                            : 'Social link';
+
+                                        return (
+                                            <a
+                                                key={index}
+                                                href={link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={label}
+                                            >
+                                                <i className={link.iconClass} aria-hidden="true" />
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -67,7 +89,7 @@ function Footer() {
                                             <a
                                                 href={link.href}
                                                 target={link.href.includes('http') ? '_blank' : '_self'}
-                                                rel="noreferrer"
+                                                rel={link.href.includes('http') ? 'noopener noreferrer' : undefined}
                                             >
                                                 {link.label}
                                             </a>
@@ -89,8 +111,8 @@ function Footer() {
                                 <div className="subscribe-form">
                                     <form action="#">
                                         <input type="text" placeholder="Email Address" />
-                                        <button>
-                                            <i className="fab fa-telegram-plane" />
+                                        <button type="submit" aria-label="Subscribe">
+                                            <i className="fab fa-telegram-plane" aria-hidden="true" />
                                         </button>
                                     </form>
                                 </div>
@@ -120,7 +142,7 @@ function Footer() {
                                             <a
                                                 href={link.href}
                                                 target={link.href.includes('http') ? '_blank' : '_self'}
-                                                rel="noreferrer"
+                                                rel={link.href.includes('http') ? 'noopener noreferrer' : undefined}
                                             >
                                                 {link.label}
                                             </a>
