@@ -4,7 +4,7 @@ import skills from "./data/skills.json";
 const Skills = () => {
   return (
     <div className="container skills" id="skills">
-      <h1 className="my-4">SKILLS</h1>
+      <h2 className="my-4">SKILLS</h2>
       <div className="row">
         {skills.map((data, index) => (
           <div
@@ -18,6 +18,10 @@ const Skills = () => {
                 src={`/assets/${data.imageSrc}`}
                 alt={data.title}
                 className="img-fluid mb-3"
+                width="70"
+                height="70"
+                loading="lazy"
+                decoding="async"
               />
               <h3>{data.title}</h3>
             </div>

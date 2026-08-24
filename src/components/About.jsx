@@ -8,25 +8,22 @@ const About = () => {
         <section className="about-me" id="about-me">
           <div className="container">
             <div className="about-me-container">
-              <h1 class="my-4">ABOUT ME</h1>
+              <h2 class="my-4">ABOUT ME</h2>
               <div className="about-me-flex-container mt-5">
                 <div className="about-me-image">
                   <div className="back-div" />
                   <div className="black-image">
                     {}
-                    <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" />
+                    <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" width="400" height="400" loading="lazy" decoding="async" />
                   </div>
                   <div className="main-image">
                     {}
-                    <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" />
+                    <img src="/assets/img/profile-pic.jpg" alt="Sahil Singh" width="400" height="400" loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div className="about-me-content">
                   <div className="logo">
-                    <img
-                      src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/logo.svg"
-                      alt="smit"
-                    />
+                    <img src="/assets/company/logo.jpg" alt="logo" width="120" height="40" loading="lazy" decoding="async" />
                   </div>
                   <div className="text">
                     <h2>I am Sahil Singh and I am a Web Developer</h2>

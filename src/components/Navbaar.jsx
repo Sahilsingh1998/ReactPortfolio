@@ -4,7 +4,7 @@ import headerData from './data/header.json';
 function Navbaar() {
     return (
         <div className="container nav_bar" data-aos="fade-down" data-aos-duration="1000">
-            <div className="left nav_items">{headerData.brand}</div>
+            <h1 className="left nav_items">{headerData.brand}</h1>
             <div className="right">
                 {headerData.links.map((link, index) => (
                     <a key={index} href={link.href} className="nav_items">

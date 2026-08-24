@@ -4,7 +4,7 @@ import experience from "./data/experience.json";
 const Experience = () => {
   return (
     <div className="container" id="experience">
-      <h1 className="my-4">EXPERIENCE</h1>
+      <h2 className="my-4">EXPERIENCE</h2>
       <div className="row">
         {experience.map((data) => (
           <div
@@ -19,11 +19,15 @@ const Experience = () => {
                   src={`/assets/${data.imageSrc}`}
                   alt=""
                   className="img-fluid"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async"
                   style={{ maxWidth: "100px" }}
                 />
               </div>
               <div className="right">
-                <h2>{data.role}</h2>
+                <h3>{data.role}</h3>
                 <h3>
                   <span style={{ color: "yellowgreen" }}>
                     {data.startDate} - {data.endDate}

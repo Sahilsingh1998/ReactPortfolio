@@ -1,10 +1,11 @@
 import React from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 function Contact() {
   return (
     <>
       <div className="container contact" id='contact'>
-        <h1>CONTACT ME</h1>
+        <h2>CONTACT ME</h2>
         <section class="contact_us mt-5">
           <div class="container">
             <div class="row">
@@ -69,7 +70,7 @@ function Contact() {
 
         <div className="container-fluid mt-5">
           <div class="responsive-map">
-            <iframe title="Address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.258830412314!2d87.24579554199615!3d25.45065026019435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0182634c26067%3A0x26b88ea67dd3e779!2sKursela%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710963292649!5m2!1sen!2sin" allowfullscreen></iframe>
+            <LazyMap />
           </div>
         </div>
 
@@ -79,3 +80,60 @@ function Contact() {
 }
 
 export default Contact
+
+function LazyMap() {
+  const [load, setLoad] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setLoad(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '200px' }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} style={{ width: '100%', height: 0, paddingBottom: '30%', position: 'relative' }}>
+      {load ? (
+        <iframe
+          title="Address"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.258830412314!2d87.24579554199615!3d25.45065026019435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0182634c26067%3A0x26b88ea67dd3e779!2sKursela%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710963292649!5m2!1sen!2sin"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+          allowFullScreen
+          loading="lazy"
+        />
+      ) : (
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: '#e8e8e8',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <button
+            onClick={() => setLoad(true)}
+            style={{ padding: '10px 18px', borderRadius: 6, border: 'none', background: '#1325e8', color: '#fff' }}
+          >
+            Load Map
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
