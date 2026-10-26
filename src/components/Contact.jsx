@@ -1,85 +1,125 @@
-import React from 'react'
-import { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 
-function Contact() {
+function Contact({ isStandalone = false }) {
   return (
-    <>
-      <div className="container contact" id='contact'>
-        <h2>CONTACT ME</h2>
-        <section class="contact_us mt-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="contact_inner">
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="contact_form_inner">
-                        <div class="contact_field">
-                          <h2>Contact Me</h2>
-                          <p>Feel Free to contact me any time. I will get back to you as soon as I can!.</p>
-                          <form action="https://formspree.io/f/mbjnazvj"
-                            method="POST">
-                            <input type="text" name='Name' class="form-control form-group py-2" placeholder="Name" required />
-                            <input type="text" name='Email' class="form-control form-group py-2" placeholder="Email" required />
-                            <input type="text" name='phone' class="form-control form-group py-2" placeholder="Phone no" required />
-                            <textarea class="form-control form-group py-2" placeholder="Message" required></textarea>
-                            <button class="contact_form_submit">Send</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="right_conatct_social_icon d-flex align-items-end">
-                        <ul class="socil_item_inner d-flex">
-                          <li>
-                            <a href='https://www.facebook.com/share/q2cd6v3zzMU3bDs9/?mibextid=qi2Omg' target='_blank' rel='noopener noreferrer' aria-label='Facebook'>
-                              <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://www.instagram.com/it_sahil_rajput?igsh=MWNoM2ZhY3UwYWJhMw==' target='_blank' rel='noopener noreferrer' aria-label='Instagram'>
-                              <i class="fab fa-instagram" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://x.com/sahilsingh7782?t=GYekHIEViuZyDbat-Ml4kw&s=08' target='_blank' rel='noopener noreferrer' aria-label='Twitter'>
-                              <i class="fab fa-twitter" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="contact_info_sec">
-                    <h3>Contact Info</h3>
-                    <div class="d-flex info_single align-items-center">
-                      <i class="fas fa-headset"></i>
-                      <span>+91 7782864311</span>
-                    </div>
-                    <div class="d-flex info_single align-items-center">
-                      <i class="fas fa-envelope-open-text"></i>
-                      <span>singhsahil.8340@gmail.com</span>
-                    </div>
+    <section className={`py-5 ${isStandalone ? 'my-4' : ''}`} id="contact" aria-label="Contact Sahil Singh">
+      <div className="text-center mb-5">
+        <h2 className="display-6 fw-bold" style={{ color: '#0F172A' }}>Get In Touch</h2>
+        <p className="text-muted">Feel free to reach out for collaborations or project discussions</p>
+      </div>
 
-                  </div>
-                </div>
+      <div className="row g-4 justify-content-center">
+        <div className="col-lg-7">
+          <div className="glass-panel p-4 p-md-5">
+            <form action="https://formspree.io/f/mbjnazvj" method="POST">
+              <div className="mb-3">
+                <label className="form-label text-secondary small fw-medium">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control"
+                  placeholder="Sahil Singh"
+                  style={{ background: '#FAF8F5', border: '1px solid rgba(148, 163, 184, 0.3)' }}
+                  required
+                />
               </div>
-            </div>
-          </div>
-        </section>
 
-        <div className="container-fluid mt-5">
-          <div class="responsive-map">
-            <LazyMap />
+              <div className="mb-3">
+                <label className="form-label text-secondary small fw-medium">Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="name@example.com"
+                  style={{ background: '#FAF8F5', border: '1px solid rgba(148, 163, 184, 0.3)' }}
+                  required
+                />
+              </div>
+
+              <div className="mb-3">
+                <label className="form-label text-secondary small fw-medium">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="form-control"
+                  placeholder="+91..."
+                  style={{ background: '#FAF8F5', border: '1px solid rgba(148, 163, 184, 0.3)' }}
+                  required
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="form-label text-secondary small fw-medium">Message</label>
+                <textarea
+                  name="message"
+                  rows="4"
+                  className="form-control"
+                  placeholder="How can Sahil Singh assist you?"
+                  style={{ background: '#FAF8F5', border: '1px solid rgba(148, 163, 184, 0.3)' }}
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="btn w-100 py-3 rounded-pill fw-semibold text-white shadow-sm"
+                style={{ background: 'linear-gradient(135deg, #4F46E5, #3730A3)', border: 'none' }}
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
 
+        <div className="col-lg-5">
+          <div className="glass-panel p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 className="h5 fw-bold mb-3" style={{ color: '#0F172A' }}>Direct Contact</h3>
+              <p className="text-secondary small mb-4">
+                Connect directly through phone, email, or my active developer profiles.
+              </p>
+
+              <div className="d-flex align-items-center gap-3 mb-3">
+                <i className="fas fa-envelope text-primary fs-5" aria-hidden="true"></i>
+                <a href="mailto:singhsahil.8340@gmail.com" className="text-secondary text-break">
+                  singhsahil.8340@gmail.com
+                </a>
+              </div>
+
+              <div className="d-flex align-items-center gap-3 mb-4">
+                <i className="fas fa-phone text-primary fs-5" aria-hidden="true"></i>
+                <a href="tel:+917782864311" className="text-secondary">
+                  +91 7782864311
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="h6 text-muted mb-3 fw-bold">Social Profiles</h4>
+              <div className="d-flex gap-3">
+                <a href="https://github.com/Sahilsingh1998" target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark rounded-circle p-2" aria-label="Sahil Singh on GitHub">
+                  <i className="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sahil-singh-69833425b" target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark rounded-circle p-2" aria-label="Sahil Singh on LinkedIn">
+                  <i className="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://x.com/sahilsingh7782" target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark rounded-circle p-2" aria-label="Sahil Singh on Twitter">
+                  <i className="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
-  )
+
+      <div className="mt-5 rounded-4 overflow-hidden shadow-sm" style={{ border: '1px solid rgba(148, 163, 184, 0.2)' }}>
+        <LazyMap />
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;
 
 function LazyMap() {
   const [load, setLoad] = useState(false);
@@ -103,34 +143,19 @@ function LazyMap() {
   }, []);
 
   return (
-    <div ref={ref} style={{ width: '100%', height: 0, paddingBottom: '30%', position: 'relative' }}>
+    <div ref={ref} style={{ width: '100%', height: 0, paddingBottom: '32%', position: 'relative' }}>
       {load ? (
         <iframe
-          title="Address"
+          title="Sahil Singh Working Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.258830412314!2d87.24579554199615!3d25.45065026019435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0182634c26067%3A0x26b88ea67dd3e779!2sKursela%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710963292649!5m2!1sen!2sin"
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
           allowFullScreen
           loading="lazy"
         />
       ) : (
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            background: '#e8e8e8',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <button
-            onClick={() => setLoad(true)}
-            style={{ padding: '10px 18px', borderRadius: 6, border: 'none', background: '#1325e8', color: '#fff' }}
-          >
-            Load Map
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: '#F1F5F9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <button onClick={() => setLoad(true)} className="btn btn-primary rounded-pill px-4 shadow-sm">
+            Load Working Location Map
           </button>
         </div>
       )}

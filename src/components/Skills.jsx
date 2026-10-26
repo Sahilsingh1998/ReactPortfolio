@@ -1,34 +1,34 @@
 import React from "react";
 import skills from "./data/skills.json";
 
-const Skills = () => {
+const Skills = ({ isStandalone = false }) => {
   return (
-    <div className="container skills" id="skills">
-      <h2 className="my-4">SKILLS</h2>
-      <div className="row">
+    <section className={`py-5 ${isStandalone ? 'my-4' : ''}`} id="skills" aria-label="Sahil Singh Technical Skills">
+      <div className="text-center mb-5">
+        <h2 className="display-6 fw-bold" style={{ color: '#0F172A' }}>Technical Skills</h2>
+        <p className="text-muted">Core technologies, libraries, and tools I use regularly</p>
+      </div>
+
+      <div className="row g-3 justify-content-center">
         {skills.map((data, index) => (
-          <div
-            key={index}
-            className="col-md-2 mb-4 d-flex justify-content-center" // 3 columns with spacing
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          >
-            <div className="item text-center">
+          <div key={data.id || index} className="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in">
+            <div className="glass-panel p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
               <img
                 src={`/assets/${data.imageSrc}`}
-                alt={data.title}
-                className="img-fluid mb-3"
-                width="70"
-                height="70"
+                alt={`${data.title} skill - Sahil Singh`}
+                className="img-fluid mb-2"
+                width="46"
+                height="46"
                 loading="lazy"
                 decoding="async"
+                style={{ objectFit: "contain" }}
               />
-              <h3>{data.title}</h3>
+              <h3 className="small mb-0 fw-bold" style={{ color: '#1E293B' }}>{data.title}</h3>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

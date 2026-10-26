@@ -7,50 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
 
-  <!-- Primary SEO Meta Tags -->
-  <title>Sahil Singh | Full Stack Developer & Software Engineer</title>
-  <meta name="title" content="Sahil Singh | Full Stack Developer & Software Engineer" />
-  <meta name="description" content="Official portfolio of Sahil Singh, a Software Developer based in New Delhi, India. Specializing in React, JavaScript, and Full Stack Web Development." />
-  <meta name="keywords" content="Sahil Singh, Sahil Singh Developer, Sahilsingh1998, Full Stack Developer, React Developer New Delhi" />
+  <!-- Primary SEO Meta Tags (Focused on exact name match) -->
+  <title>Sahil Singh - Official Portfolio & Website</title>
+  <meta name="title" content="Sahil Singh - Official Portfolio & Website" />
+  <meta name="description" content="Official website and portfolio of Sahil Singh, Full Stack Software Developer based in New Delhi, India. Explore technical projects, experience, and skills." />
+  <meta name="keywords" content="Sahil Singh, Sahilsingh1998, Sahil Rajput, Sahil Singh Developer, Full Stack Developer New Delhi" />
   <meta name="author" content="Sahil Singh" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://sahilsinghdeveloper.netlify.app/" />
 
   <!-- Open Graph / Facebook / LinkedIn -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
+  <meta property="profile:first_name" content="Sahil" />
+  <meta property="profile:last_name" content="Singh" />
+  <meta property="profile:username" content="Sahilsingh1998" />
+  <meta property="og:site_name" content="Sahil Singh" />
   <meta property="og:url" content="https://sahilsinghdeveloper.netlify.app/" />
-  <meta property="og:title" content="Sahil Singh | Full Stack Developer Portfolio" />
-  <meta property="og:description" content="Portfolio of Sahil Singh, Full Stack Developer from New Delhi, India. Explore projects, technical skills, and experience." />
+  <meta property="og:title" content="Sahil Singh | Official Website & Portfolio" />
+  <meta property="og:description" content="Official portfolio of Sahil Singh, Full Stack Software Developer based in New Delhi, India." />
   <meta property="og:image" content="https://sahilsinghdeveloper.netlify.app/logo192.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sahilsingh7782" />
+  <meta name="twitter:creator" content="@sahilsingh7782" />
   <meta name="twitter:url" content="https://sahilsinghdeveloper.netlify.app/" />
-  <meta name="twitter:title" content="Sahil Singh | Full Stack Developer Portfolio" />
-  <meta name="twitter:description" content="Portfolio of Sahil Singh, Full Stack Developer from New Delhi, India. Explore projects, technical skills, and experience." />
+  <meta name="twitter:title" content="Sahil Singh | Official Website & Portfolio" />
+  <meta name="twitter:description" content="Official portfolio of Sahil Singh, Full Stack Software Developer based in New Delhi, India." />
   <meta name="twitter:image" content="https://sahilsinghdeveloper.netlify.app/logo192.png" />
 
-  <!-- Structured Data (JSON-LD) for Google Entity Association -->
+  <!-- Unified JSON-LD Knowledge Graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sahil Singh",
-    "alternateName": ["Sahil Rajput", "Sahilsingh1998"],
-    "jobTitle": "Full Stack Developer",
-    "url": "https://sahilsinghdeveloper.netlify.app/",
-    "email": "mailto:singhsahil.8340@gmail.com",
-    "telephone": "+917782864311",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "New Delhi",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://github.com/Sahilsingh1998",
-      "https://www.linkedin.com/in/sahil-singh-69833425b",
-      "https://x.com/sahilsingh7782",
-      "https://www.instagram.com/it_sahil_rajput",
-      "https://www.facebook.com/share/q2cd6v3zzMU3bDs9/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sahilsinghdeveloper.netlify.app/#website",
+        "url": "https://sahilsinghdeveloper.netlify.app/",
+        "name": "Sahil Singh",
+        "alternateName": [
+          "Sahil Singh Portfolio", 
+          "Sahil Singh Developer", 
+          "Sahil Rajput"
+        ],
+        "about": {
+          "@id": "https://sahilsinghdeveloper.netlify.app/#person"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sahilsinghdeveloper.netlify.app/#person",
+        "name": "Sahil Singh",
+        "alternateName": ["Sahil Rajput", "Sahilsingh1998"],
+        "jobTitle": "Full Stack Developer",
+        "url": "https://sahilsinghdeveloper.netlify.app/",
+        "email": "mailto:singhsahil.8340@gmail.com",
+        "telephone": "+917782864311",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New Delhi",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/Sahilsingh1998",
+          "https://www.linkedin.com/in/sahil-singh-69833425b",
+          "https://x.com/sahilsingh7782",
+          "https://www.instagram.com/it_sahil_rajput",
+          "https://www.facebook.com/share/q2cd6v3zzMU3bDs9/"
+        ]
+      }
     ]
   }
   </script>
@@ -59,8 +86,6 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <!-- Stylesheets -->
-  <!-- Bootstrap is bundled locally to avoid external render-blocking CSS -->
-  <!-- Font Awesome loaded non-blocking; noscript fallback provided -->
   <link rel="preload" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></noscript>
 
