@@ -1,6 +1,5 @@
 import React from 'react';
 import './footer.css';
-import logoFooter from '../logo-footer.png';
 import footerData from './data/footer.json';
 
 function Footer() {
