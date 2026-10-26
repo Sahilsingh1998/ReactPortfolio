@@ -32,16 +32,6 @@ function Footer() {
             {/* Brand column */}
             <div className="col-xl-4 col-lg-4 mb-4 mb-lg-0">
               <div className="footer-widget">
-                {/* <div className="footer-logo">
-                  <a href="#home" aria-label="Sahil Singh Home">
-                    <img
-                      src={logoFooter}
-                      className="img-fluid"
-                      alt="Sahil Singh - Official Portfolio Logo"
-                      loading="lazy"
-                    />
-                  </a>
-                </div> */}
                 <div className="footer-text">
                   <p>
                     Official web portfolio of <strong>Sahil Singh</strong>, a Full Stack Developer & Software Engineer based in New Delhi, India. Open for web development and software engineering opportunities.
